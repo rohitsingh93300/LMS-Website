@@ -20,7 +20,7 @@ const CreateLecture = () => {
     const createLectureHandler = async () => {
         try {
             setLoading(true)
-            const res = await axios.post(`http://localhost:8000/api/v1/course/${params?.courseId}/lecture`, { lectureTitle }, {
+            const res = await axios.post(`https://lms-website-wdnh.onrender.com/api/v1/course/${params?.courseId}/lecture`, { lectureTitle }, {
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -43,7 +43,7 @@ const CreateLecture = () => {
     useEffect(()=>{
         const getLectures = async()=>{
           try {
-            const res = await axios.get(`http://localhost:8000/api/v1/course/${params.courseId}/lecture`,{withCredentials:true})
+            const res = await axios.get(`https://lms-website-wdnh.onrender.com/api/v1/course/${params.courseId}/lecture`,{withCredentials:true})
             dispatch(setLecture(res.data.lectures))
           } catch (error) {
             console.log(error)

@@ -25,7 +25,7 @@ const CourseTab = () => {
 
     const getCourseById = async () => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/v1/course/${id}`, { withCredentials: true })
+            const res = await axios.get(`https://lms-website-wdnh.onrender.com/api/v1/course/${id}`, { withCredentials: true })
             if (res.data.success) {
                 setSelectedCourse(res.data.course)
             }
@@ -37,7 +37,7 @@ const CourseTab = () => {
 
     const getCreatorCourse = async () => {
         try {
-            const res = await axios.get('http://localhost:8000/api/v1/course/', { withCredentials: true })
+            const res = await axios.get('https://lms-website-wdnh.onrender.com/api/v1/course/', { withCredentials: true })
             if (res.data.success) {
                 dispatch(setCourse(res.data.courses))
             }
@@ -104,7 +104,7 @@ const CourseTab = () => {
         console.log(input);
         try {
             dispatch(setLoading(true))
-            const res = await axios.put(`http://localhost:8000/api/v1/course/${id}`, formData, {
+            const res = await axios.put(`https://lms-website-wdnh.onrender.com/api/v1/course/${id}`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 },
@@ -132,7 +132,7 @@ const CourseTab = () => {
         console.log("action", action);
 
         try {
-            const res = await axios.patch(`http://localhost:8000/api/v1/course/${id}`, {
+            const res = await axios.patch(`https://lms-website-wdnh.onrender.com/api/v1/course/${id}`, {
                 params: {
                     action
                 },
