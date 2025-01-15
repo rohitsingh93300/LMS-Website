@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className='text-4xl mt-10 md:mt-0 md:text-6xl font-extrabold text-gray-200'>Explore Our <span className='text-blue-500'>14000+</span><br /> Online courses for all</h1>
           <p className='text-gray-300 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipiscing elit tempor ut labore</p>
           <div className='inline-flex relative'>
-            <input type="text" placeholder='Search Your Course Here...' className='bg-gray-200 lg:w-[450px] text-gray-800 p-4 pr-40 rounded-lg rounded-r-xl placeholder:text-gray-500' />
+            <input type="text" placeholder='Search Your Course Here...' className='bg-gray-200 w-[350px] lg:w-[450px] text-gray-800 p-4 pr-40 rounded-lg rounded-r-xl placeholder:text-gray-500' />
             <button className='px-4 py-[14px] flex gap-1 items-center bg-blue-500 font-semibold absolute right-0 text-white rounded-r-lg text-xl'>Search<Search width={20} height={20} /></button>
           </div>
         </div>
