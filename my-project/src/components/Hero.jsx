@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 const Hero = () => {
   return (
-    <div className='bg-slate-800 pt-14'>
+    <div className='bg-slate-800 pt-14 px-4 md:px-0'>
       <div className='lg:h-[700px] max-w-7xl mx-auto flex md:flex-row flex-col gap-10 items-center'>
         {/* text section */}
         <div className='space-y-7 px-4 md:px-0'>
