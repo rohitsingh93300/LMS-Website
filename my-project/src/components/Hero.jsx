@@ -5,10 +5,10 @@ import CountUp from 'react-countup';
 
 const Hero = () => {
   return (
-    <div className='bg-slate-800 pt-14 px-4 md:px-0'>
+    <div className='bg-slate-800 pt-14'>
       <div className='lg:h-[700px] max-w-7xl mx-auto flex md:flex-row flex-col gap-10 items-center'>
         {/* text section */}
-        <div className='space-y-7 px-4 md:px-0'>
+        <div className='space-y-7 px-2 md:px-0'>
           <h1 className='text-4xl mt-10 md:mt-0 md:text-6xl font-extrabold text-gray-200'>Explore Our <span className='text-blue-500'>14000+</span><br /> Online courses for all</h1>
           <p className='text-gray-300 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipiscing elit tempor ut labore</p>
           <div className='inline-flex relative'>
